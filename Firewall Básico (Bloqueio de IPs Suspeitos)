@@ -1,0 +1,11 @@
+bloqueados = {"192.168.0.100", "202.54.1.1"}  # Lista de IPs bloqueados
+
+def verificar_acesso(ip):
+    if ip in bloqueados:
+        print(f"Acesso negado para o IP: {ip}")
+    else:
+        print(f"Acesso permitido para o IP: {ip}")
+
+# Exemplo de uso
+verificar_acesso("192.168.0.100")
+verificar_acesso("203.0.113.5")
